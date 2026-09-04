@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex,nofollow">
+<title>株式会社仙波工業｜栃木県宇都宮市の総合建設会社</title>
+<meta name="description" content="株式会社仙波工業は栃木県宇都宮市の総合建設会社です。土木・建築・機械設備・電気設備を手がけています。">
+<link rel="canonical" href="https://shogohukunaga.github.io/senbakk/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="株式会社仙波工業｜栃木県宇都宮市の総合建設会社">
+<meta property="og:description" content="栃木県宇都宮市の総合建設会社。土木・建築・機械設備・電気設備。">
+<meta property="og:image" content="https://shogohukunaga.github.io/senbakk/image/work-civil.jpg">
+<meta property="og:url" content="https://shogohukunaga.github.io/senbakk/">
+<meta property="og:site_name" content="株式会社仙波工業">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet">
+<script>document.documentElement.className+=" js";</script>
+<style>
+/* =========================================================
+   株式会社仙波工業 — design-spec.md 準拠
+   モノクローム × エディトリアル × 幾何モチーフの反復
+   ========================================================= */
+:root{
+  --ink:#111111;
+  --sub:#6b6b6b;
+  --line:#dcdcdc;
+  --band:#f1f1f1;
+  --band-2:#fafafa;
+  --accent:#14603a;
+  --maxw:1200px;
+  --pad:150px;
+  /* 形状語彙 */
+  --btn-hex:polygon(12px 0,calc(100% - 12px) 0,100% 50%,calc(100% - 12px) 100%,12px 100%,0 50%);
+  --chamfer:polygon(44px 0,100% 0,100% calc(100% - 44px),calc(100% - 44px) 100%,0 100%,0 44px);
+  --chamfer-alt:polygon(0 0,calc(100% - 44px) 0,100% 44px,100% 100%,44px 100%,0 calc(100% - 44px));
+  --diamond:polygon(50% 0,100% 50%,50% 100%,0 50%);
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:#fff;color:var(--ink);overflow-x:hidden;
+  font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic Medium","Yu Gothic",system-ui,sans-serif;
+  font-size:16px;line-height:1.9;letter-spacing:.04em;font-weight:400;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+h1,h2,h3,h4,p,dl,dd,figure{margin:0;}
+ul,ol{margin:0;padding:0;list-style:none;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+.line{display:inline-block;}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+/* --- 英字 --- */
+.en{font-family:"Work Sans","Helvetica Neue",Arial,sans-serif;}
+/* --- 縦組みローマ字 --- */
+.vtxt{
+  writing-mode:vertical-rl;font-family:"Work Sans",Arial,sans-serif;
+  font-size:11px;letter-spacing:.2em;color:var(--sub);line-height:1;white-space:nowrap;
+}
+/* --- 方眼＋45°ラティス --- */
+.grid-bg{
+  background-image:
+    linear-gradient(rgba(17,17,17,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(17,17,17,.055) 1px,transparent 1px),
+    repeating-linear-gradient(45deg,rgba(17,17,17,.035) 0 1px,transparent 1px 56px),
+    repeating-linear-gradient(-45deg,rgba(17,17,17,.035) 0 1px,transparent 1px 56px);
+  background-size:40px 40px,40px 40px,auto,auto;
+}
+/* --- 小菱形 --- */
+.dia{display:inline-block;width:7px;height:7px;background:var(--ink);clip-path:var(--diamond);
+  vertical-align:middle;flex:0 0 auto;}
+.dia--accent{background:var(--accent);}
+
+/* --- ボタン --- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  background:var(--ink);color:#fff;padding:18px 40px;font-size:14px;font-weight:500;
+  letter-spacing:.1em;clip-path:var(--btn-hex);transition:background .25s ease;border:0;cursor:pointer;
+  font-family:inherit;
+}
+.btn:hover{background:#333;}
+.btn--ghost{background:#fff;color:var(--ink);border:1px solid var(--ink);clip-path:none;padding:17px 28px;}
+.btn--ghost:hover{background:var(--band);}
+/* READ MORE 型 */
+.more{display:inline-flex;align-items:center;gap:14px;font-family:"Work Sans",Arial,sans-serif;
+  font-size:13px;letter-spacing:.14em;}
+.more i{width:22px;height:22px;background:var(--ink);clip-path:var(--diamond);position:relative;flex:0 0 auto;}
+.more i::after{content:"";position:absolute;left:8px;top:8px;width:5px;height:5px;
+  border-top:1px solid #fff;border-right:1px solid #fff;transform:rotate(45deg);}
+
+/* --- テキストリンク --- */
+.tlink{position:relative;text-decoration:underline;text-underline-offset:6px;
+  text-decoration-thickness:1px;text-decoration-color:var(--line);transition:text-decoration-color .3s;}
+.tlink:hover{text-decoration-color:var(--accent);}
+
+/* =========================================================
+   Header
+   ========================================================= */
+header.site{position:sticky;top:0;z-index:60;background:#fff;border-bottom:1px solid var(--line);}
+header.site .wrap{display:flex;align-items:center;gap:28px;height:84px;max-width:1560px;}
+.brand{display:flex;align-items:center;gap:12px;}
+.brand__mark{display:flex;gap:3px;align-items:center;}
+.brand__mark span{width:13px;height:13px;background:var(--ink);clip-path:var(--diamond);display:block;}
+.brand__mark span:last-child{background:#fff;border:1px solid var(--ink);}
+.brand__name{font-size:17px;font-weight:500;letter-spacing:.08em;line-height:1.25;white-space:nowrap;}
+.brand__name small{display:block;font-family:"Work Sans",Arial,sans-serif;font-weight:400;
+  font-size:9px;letter-spacing:.22em;color:var(--sub);}
+.hmeta{font-size:11px;line-height:1.7;color:var(--sub);letter-spacing:.02em;white-space:nowrap;
+  min-width:0;flex:0 1 auto;overflow:hidden;text-overflow:ellipsis;}
+.main a{white-space:nowrap;}
+.hmeta b{color:var(--ink);font-weight:500;font-family:"Work Sans",Arial,sans-serif;letter-spacing:.06em;}
+nav.main{margin-left:auto;}
+nav.main ul{display:flex;gap:28px;font-size:13px;letter-spacing:.06em;}
+nav.main a{position:relative;padding-bottom:4px;}
+nav.main a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--accent);
+  transition:width .3s var(--ease);}
+nav.main a:hover::after{width:100%;}
+.hbtn{white-space:nowrap;}
+.hamb{display:none;background:none;border:0;padding:8px 0;cursor:pointer;width:34px;margin-left:auto;}
+.hamb span{display:block;height:1px;background:var(--ink);margin-left:auto;transition:.3s var(--ease);}
+.hamb span:nth-child(1){width:30px;}
+.hamb span:nth-child(2){width:22px;margin-top:7px;}
+.hamb span:nth-child(3){width:30px;margin-top:7px;}
+.hamb span:nth-child(4){width:16px;margin-top:7px;}
+
+/* =========================================================
+   FV — ナンバリング横並びカルーセル
+   ========================================================= */
+.fv{position:relative;overflow:hidden;padding:70px 0 0;}
+/* 横方向のみクリップ。下線付きキャプションが下にはみ出すため padding で逃がす */
+.fv__view{overflow:hidden;padding-bottom:96px;}
+.fv__track{display:flex;transition:transform .9s var(--ease);will-change:transform;}
+.fv__slide{flex:0 0 720px;padding:0 30px;opacity:.28;transition:opacity .9s var(--ease);}
+.fv__slide.is-on{opacity:1;}
+.fv__num{display:flex;align-items:flex-start;gap:14px;margin-bottom:22px;}
+.fv__num b{font-family:"Work Sans",Arial,sans-serif;font-size:38px;font-weight:500;line-height:1;
+  letter-spacing:.02em;position:relative;padding:0 16px;}
+.fv__num b::before,.fv__num b::after{content:"";position:absolute;top:-4px;bottom:-4px;width:9px;
+  border:1px solid var(--ink);}
+.fv__num b::before{left:0;border-right:0;}
+.fv__num b::after{right:0;border-left:0;}
+.fv__num em{font-family:"Work Sans",Arial,sans-serif;font-style:normal;font-size:13px;
+  letter-spacing:.16em;line-height:1.5;padding-top:6px;color:var(--ink);}
+.fv__body{position:relative;}
+.fv__img{width:100%;height:330px;object-fit:cover;clip-path:var(--chamfer);}
+.fv__cap{position:absolute;left:-14px;bottom:-30px;max-width:92%;}
+.fv__cap p{background:#fff;display:table;padding:4px 14px 6px 0;font-size:24px;font-weight:500;
+  letter-spacing:.09em;line-height:1.8;border-bottom:1px solid var(--ink);margin-bottom:5px;}
+.fv__side{position:absolute;right:-26px;top:8px;height:150px;}
+.fv__tags{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap;}
+.fv__tags span{background:var(--ink);color:#fff;font-size:11px;letter-spacing:.06em;padding:4px 11px;}
+.fv__tabs{display:flex;justify-content:center;gap:30px;margin-top:-14px;flex-wrap:wrap;}
+.fv__tabs button{background:none;border:0;font-family:inherit;font-size:14px;letter-spacing:.06em;
+  color:var(--sub);cursor:pointer;padding:0 0 6px;display:inline-flex;align-items:center;gap:8px;
+  border-bottom:1px solid transparent;transition:.3s;}
+.fv__tabs button .dia{opacity:0;transition:opacity .3s;width:6px;height:6px;}
+.fv__tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink);}
+.fv__tabs button[aria-selected="true"] .dia{opacity:1;}
+
+/* --- FV下の理念ストリップ --- */
+.lead{border-top:1px solid var(--line);margin-top:70px;}
+.lead .wrap{display:grid;grid-template-columns:1fr auto;gap:50px;align-items:end;padding-top:66px;padding-bottom:66px;}
+.lead h1{font-size:34px;font-weight:500;letter-spacing:.09em;line-height:1.8;}
+.lead h1 .line{display:block;width:fit-content;max-width:100%;position:relative;}
+.lead h1 .line::after{content:"";display:block;height:1px;background:var(--ink);margin-top:2px;}
+.lead__meta{margin-top:24px;font-size:14px;color:var(--sub);}
+.lead__tag{font-family:"Work Sans",Arial,sans-serif;font-size:12px;letter-spacing:.2em;
+  color:var(--sub);margin-bottom:20px;}
+.lead__cta{text-align:right;}
+.lead__tel{display:block;font-family:"Work Sans",Arial,sans-serif;font-size:32px;letter-spacing:.04em;
+  line-height:1.2;font-weight:500;}
+.lead__tel small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:11px;letter-spacing:.14em;
+  color:var(--sub);margin-bottom:4px;}
+.lead__cta .btn{margin-top:18px;}
+
+/* =========================================================
+   Section base
+   ========================================================= */
+section{padding:var(--pad) 0;}
+.shead{margin-bottom:66px;}
+.shead h2{font-family:"Work Sans",Arial,sans-serif;font-size:28px;font-weight:500;letter-spacing:.14em;
+  line-height:1.3;display:table;padding-bottom:10px;border-bottom:1px solid var(--ink);}
+.shead p{font-size:15px;font-weight:500;letter-spacing:.08em;margin-top:16px;}
+.shead .note{font-weight:400;color:var(--sub);font-size:14px;letter-spacing:.04em;margin-top:8px;}
+
+/* =========================================================
+   MESSAGE
+   ========================================================= */
+.msg{position:relative;}
+.msg .wrap{position:relative;}
+.msg__grid{display:grid;grid-template-columns:400px 1fr;gap:0;align-items:center;}
+.msg__figure{position:relative;z-index:2;}
+.msg__figure img{width:400px;height:460px;object-fit:cover;clip-path:var(--chamfer-alt);}
+.msg__panel{background:var(--band);padding:80px 70px 80px 110px;margin-left:-60px;position:relative;}
+.msg__panel h3{font-size:26px;font-weight:500;letter-spacing:.09em;line-height:1.85;margin-bottom:8px;}
+.msg__panel h3 .line{display:block;border-bottom:1px solid var(--ink);}
+.msg__panel .en-sub{font-family:"Work Sans",Arial,sans-serif;font-size:12px;letter-spacing:.2em;
+  color:var(--sub);margin:22px 0 26px;}
+.msg__panel p{font-size:15px;line-height:2.1;margin-bottom:16px;}
+.msg__sign{margin-top:26px;font-size:14px;color:var(--sub);}
+.msg__sign b{color:var(--ink);font-weight:500;font-size:17px;letter-spacing:.1em;margin-left:8px;}
+.msg__art{margin-top:44px;}
+.msg__art svg{width:100%;max-width:520px;height:auto;}
+
+/* =========================================================
+   BUSINESS
+   ========================================================= */
+.biz{background:var(--band);}
+.biz__intro{display:grid;grid-template-columns:1fr 300px;gap:60px;align-items:end;margin-bottom:80px;}
+.biz__intro svg{width:100%;height:auto;}
+.biz__list{display:grid;grid-template-columns:repeat(2,1fr);gap:90px 70px;}
+.biz__item{display:grid;grid-template-columns:230px 1fr;gap:34px;align-items:start;}
+.biz__item figure{position:relative;}
+.biz__item img{width:230px;height:270px;object-fit:cover;clip-path:var(--chamfer);
+  transition:transform 1.2s ease-out;}
+.biz__item figure{overflow:hidden;clip-path:var(--chamfer);}
+.biz__item:hover img{transform:scale(1.04);}
+.biz__num{font-family:"Work Sans",Arial,sans-serif;font-size:26px;font-weight:500;line-height:1;
+  letter-spacing:.02em;}
+.biz__en{font-family:"Work Sans",Arial,sans-serif;font-size:11px;letter-spacing:.16em;color:var(--sub);
+  margin:10px 0 14px;}
+.biz__item h3{font-size:20px;font-weight:500;letter-spacing:.08em;line-height:1.6;
+  padding-bottom:14px;border-bottom:1px solid var(--ink);margin-bottom:16px;}
+.biz__item p{font-size:14px;line-height:2;color:var(--ink);}
+.biz__item .req{font-size:13px;color:var(--sub);}
+
+/* =========================================================
+   工種一覧
+   ========================================================= */
+.spec__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0 70px;border-top:1px solid var(--line);}
+.spec__grid li{display:flex;align-items:flex-start;gap:14px;padding:18px 2px;
+  border-bottom:1px solid var(--line);font-size:15px;letter-spacing:.05em;}
+.spec__grid li .dia{margin-top:11px;width:6px;height:6px;}
+.spec__grid li b{font-weight:500;}
+.spec__grid li span{display:block;font-size:13px;color:var(--sub);line-height:1.8;margin-top:2px;}
+
+/* =========================================================
+   RECRUIT
+   ========================================================= */
+.rec{position:relative;}
+.rec__top{display:grid;grid-template-columns:1fr 360px;gap:70px;align-items:end;margin-bottom:70px;}
+.badge{display:inline-flex;align-items:center;gap:12px;color:var(--accent);font-size:13px;
+  letter-spacing:.12em;font-weight:500;margin-bottom:22px;}
+.badge::before,.badge::after{content:"";width:14px;height:1px;background:var(--accent);}
+.badge::before{transform:rotate(60deg);}
+.badge::after{transform:rotate(-60deg);}
+.rec__top h2{font-size:36px;font-weight:500;letter-spacing:.09em;line-height:1.7;}
+.rec__top h2 .line{display:block;}
+.rec__top .en-sub{font-family:"Work Sans",Arial,sans-serif;font-size:12px;letter-spacing:.2em;
+  color:var(--sub);margin-top:18px;}
+.rec__top p{font-size:15px;line-height:2.1;margin-top:22px;max-width:38em;}
+.rec__photo img{width:100%;height:300px;object-fit:cover;clip-path:var(--chamfer);
+  filter:grayscale(1) contrast(1.05);}
+.rec__cap{font-size:11px;color:var(--sub);margin-top:12px;letter-spacing:.04em;}
+.jobs{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.job{border:1px solid var(--line);background:var(--band-2);padding:34px 28px 30px;}
+.job h3{font-size:17px;font-weight:500;letter-spacing:.07em;line-height:1.6;padding-bottom:16px;
+  border-bottom:1px solid var(--ink);margin-bottom:20px;display:flex;align-items:center;gap:10px;}
+.job dl{display:grid;grid-template-columns:auto 1fr;gap:9px 16px;font-size:13.5px;line-height:1.8;}
+.job dt{color:var(--sub);white-space:nowrap;}
+.job dd{margin:0;}
+.job .pay{font-family:"Work Sans",Arial,sans-serif;font-size:15px;letter-spacing:.02em;}
+.rec__note{margin-top:34px;font-size:13px;color:var(--sub);}
+.rec__cta{margin-top:56px;border-top:1px solid var(--line);padding-top:50px;
+  display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap;}
+.rec__cta p{font-size:15px;letter-spacing:.06em;}
+.rec__cta .tel{font-family:"Work Sans",Arial,sans-serif;font-size:30px;letter-spacing:.04em;font-weight:500;
+  line-height:1.2;}
+.rec__cta .tel small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:11px;
+  letter-spacing:.14em;color:var(--sub);}
+.rec__actions{display:flex;align-items:center;gap:26px;flex-wrap:wrap;}
+
+/* =========================================================
+   COMPANY
+   ========================================================= */
+.comp{background:var(--band);}
+.comp__grid{display:grid;grid-template-columns:1fr 330px;gap:80px;align-items:start;}
+.deflist{border-top:1px solid var(--ink);}
+.deflist div{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:17px 2px;
+  border-bottom:1px solid var(--line);font-size:15px;}
+.deflist dt{color:var(--sub);font-weight:400;}
+.deflist dd{margin:0;letter-spacing:.05em;}
+.cert{background:#fff;border:1px solid var(--line);padding:34px 30px;}
+.cert .mark{width:56px;height:56px;background:var(--ink);clip-path:var(--diamond);
+  display:grid;place-items:center;margin-bottom:20px;}
+.cert .mark::after{content:"";width:16px;height:16px;background:#fff;clip-path:var(--diamond);}
+.cert h3{font-size:16px;font-weight:500;letter-spacing:.07em;line-height:1.7;margin-bottom:14px;
+  padding-bottom:14px;border-bottom:1px solid var(--ink);}
+.cert p{font-size:13px;line-height:2;color:var(--sub);}
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+.faq__list{border-top:1px solid var(--ink);}
+.faq__list > li{border-bottom:1px solid var(--line);padding:30px 2px;
+  display:grid;grid-template-columns:auto 1fr;gap:6px 20px;}
+.faq__q{font-family:"Work Sans",Arial,sans-serif;font-size:15px;color:var(--accent);line-height:1.9;}
+.faq__a{font-family:"Work Sans",Arial,sans-serif;font-size:15px;color:var(--sub);line-height:2;}
+.faq__list h3{font-size:16px;font-weight:500;letter-spacing:.07em;line-height:1.9;}
+.faq__list p{font-size:15px;color:var(--ink);line-height:2;}
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+.ct__grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start;}
+.ct__big{font-family:"Work Sans",Arial,sans-serif;font-size:46px;letter-spacing:.03em;font-weight:500;
+  line-height:1.15;display:block;}
+.ct__big small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:12px;letter-spacing:.16em;
+  color:var(--sub);margin-bottom:8px;}
+.ct__sub{margin-top:14px;font-size:14px;color:var(--sub);}
+.ct__actions{margin-top:36px;display:flex;gap:20px;flex-wrap:wrap;}
+.ct__info{border-top:1px solid var(--ink);}
+.ct__info div{display:grid;grid-template-columns:110px 1fr;gap:20px;padding:16px 2px;
+  border-bottom:1px solid var(--line);font-size:15px;}
+.ct__info dt{color:var(--sub);}
+.ct__info dd{margin:0;letter-spacing:.04em;}
+
+/* =========================================================
+   Footer
+   ========================================================= */
+footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relative;}
+.foot__grid{display:grid;grid-template-columns:1fr 1fr auto;gap:50px;align-items:start;}
+.foot__addr{font-size:13.5px;line-height:2;color:var(--sub);}
+.foot__addr b{display:block;color:var(--ink);font-weight:500;font-size:16px;letter-spacing:.08em;margin-bottom:10px;}
+.foot__addr a{color:var(--ink);}
+.foot__nav ul{display:flex;flex-wrap:wrap;gap:14px 26px;font-size:14px;}
+.foot__licence{margin-top:26px;font-size:11px;line-height:1.9;color:var(--sub);}
+.pagetop{display:flex;flex-direction:column;align-items:center;gap:12px;}
+.pagetop .arw{width:1px;height:64px;background:var(--ink);position:relative;}
+.pagetop .arw::after{content:"";position:absolute;top:0;left:-3px;width:7px;height:7px;
+  border-top:1px solid var(--ink);border-right:1px solid var(--ink);transform:rotate(-45deg);}
+.foot__bottom{margin-top:54px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
+  font-size:11px;color:var(--sub);letter-spacing:.06em;}
+.foot__bottom .en{letter-spacing:.1em;}
+.mock{border:1px solid var(--line);background:var(--band-2);padding:14px 18px;font-size:11.5px;
+  color:var(--sub);line-height:1.9;margin-top:30px;}
+
+/* =========================================================
+   Scroll reveal
+   ========================================================= */
+.js .rv{opacity:0;transform:translateY(12px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
+.js .rv.is-in{opacity:1;transform:none;}
+
+/* =========================================================
+   Responsive
+   ========================================================= */
+@media(max-width:1080px){
+  :root{--pad:110px;}
+  .msg__grid{grid-template-columns:320px 1fr;}
+  .msg__figure img{width:320px;height:400px;}
+  .msg__panel{padding:60px 40px 60px 80px;}
+  .biz__list{gap:70px 46px;}
+  .rec__top{grid-template-columns:1fr 280px;gap:44px;}
+  .comp__grid{grid-template-columns:1fr 280px;gap:46px;}
+  .hmeta{display:none;}
+  nav.main ul{gap:20px;font-size:12px;}
+}
+@media(max-width:900px){
+  :root{--pad:80px;}
+  header.site .wrap{height:68px;gap:16px;}
+  nav.main{position:fixed;inset:0;height:100dvh;background:#fff;transform:translateX(100%);
+    transition:transform .4s var(--ease);padding:110px 32px 40px;overflow-y:auto;margin-left:0;z-index:55;}
+  .drawer-bd{position:fixed;inset:0;background:rgba(17,17,17,.4);z-index:54;}
+  body.menu-open{overflow:hidden;}
+  nav.main.open{transform:none;}
+  nav.main ul{flex-direction:column;gap:0;font-size:20px;}
+  nav.main li{border-bottom:1px solid var(--line);}
+  nav.main a{display:block;padding:20px 0;letter-spacing:.1em;}
+  nav.main a::after{display:none;}
+  .hamb{display:block;z-index:70;}
+  .hbtn{display:none;}
+  .fv{padding-top:36px;}
+  .fv__view{padding-bottom:74px;}
+  .fv__slide{flex:0 0 100%;padding:0 24px;opacity:1;}
+  .fv__img{height:230px;}
+  .fv__cap{left:0;bottom:-24px;max-width:100%;}
+  .fv__cap p{font-size:18px;}
+  .fv__side{display:none;}
+  .fv__num b{font-size:30px;}
+  .fv__tabs{margin-top:-18px;justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;
+    gap:24px;padding:0 24px 4px;-ms-overflow-style:none;scrollbar-width:none;}
+  .fv__tabs::-webkit-scrollbar{display:none;}
+  .fv__tabs button{white-space:nowrap;font-size:13px;}
+  .lead{margin-top:48px;}
+  .lead .wrap{grid-template-columns:1fr;gap:34px;padding-top:44px;padding-bottom:44px;}
+  .lead h1{font-size:21px;letter-spacing:.07em;}
+  .lead__cta{text-align:left;}
+  .shead{margin-bottom:44px;}
+  .shead h2{font-size:20px;}
+  .msg__grid{grid-template-columns:1fr;}
+  .msg__figure img{width:100%;height:280px;clip-path:var(--chamfer);}
+  .msg__panel{margin-left:0;margin-top:-30px;padding:56px 24px 44px;}
+  .msg__panel h3{font-size:19px;}
+  .biz__intro{grid-template-columns:1fr;gap:30px;margin-bottom:50px;}
+  .biz__intro svg{max-width:260px;}
+  .biz__list{grid-template-columns:1fr;gap:48px;}
+  .biz__item{grid-template-columns:120px 1fr;gap:20px;}
+  .biz__item img{width:120px;height:150px;}
+  .biz__item h3{font-size:17px;}
+  .spec__grid{grid-template-columns:1fr;gap:0;}
+  .rec__top{grid-template-columns:1fr;gap:34px;}
+  .rec__top h2{font-size:24px;}
+  .jobs{grid-template-columns:1fr;gap:18px;}
+  .comp__grid{grid-template-columns:1fr;gap:40px;}
+  .deflist div{grid-template-columns:110px 1fr;gap:14px;font-size:14px;}
+  .faq__list > li{grid-template-columns:auto 1fr;gap:4px 14px;padding:24px 2px;}
+  .ct__grid{grid-template-columns:1fr;gap:44px;}
+  .ct__big{font-size:34px;}
+  .ct__info div{grid-template-columns:88px 1fr;gap:14px;font-size:14px;}
+  .foot__grid{grid-template-columns:1fr;gap:34px;}
+  .pagetop{flex-direction:row;align-self:flex-end;}
+  .pagetop .arw{height:1px;width:54px;}
+  .pagetop .arw::after{top:-3px;left:0;transform:rotate(-135deg);}
+  .pagetop .vtxt{writing-mode:horizontal-tb;}
+  .rec__cta{padding-top:36px;margin-top:40px;}
+}
+@media(max-width:430px){
+  .lead h1{font-size:19px;}
+  .lead__tel{font-size:26px;}
+  .ct__big{font-size:28px;}
+  .biz__item{grid-template-columns:1fr;}
+  .biz__item img{width:100%;height:200px;}
+  .btn{padding:16px 28px;font-size:13px;}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{animation:none!important;transition:none!important;}
+  .rv{opacity:1;transform:none;}
+  .fv__slide{opacity:1;}
+}
+</style>
+<!-- 構造化データ。noindex なので検索には出ないが、qa_check が必須としているので置く。
+     値は全てプレースホルダにしてある（種の会社の情報が残らないように） -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "株式会社仙波工業",
+  "url": "https://shogohukunaga.github.io/senbakk/",
+  "telephone": "+81286600888",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "JP",
+    "addressRegion": "栃木県",
+    "addressLocality": "宇都宮市",
+    "streetAddress": "栃木県宇都宮市平出町3769-1"
+  },
+  "description": "栃木県宇都宮市の総合建設会社。土木・建築・機械設備・電気設備。"
+}
+</script>
+<!-- 配色の上書き。値が無ければブロックごと落ちてベースの既定色が残る -->
+<!--BLOCK:色_主--><style>:root{--accent:#1D5A94;}</style><!--/BLOCK:色_主-->
+<!--BLOCK:色_地--><style>:root{--band:#F1F4F8;}</style><!--/BLOCK:色_地-->
+
+</head>
+<body>
+
+<!-- ===================== Header ===================== -->
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="株式会社仙波工業 トップへ">
+      <span class="brand__mark" aria-hidden="true"><span></span><span></span></span>
+      <span class="brand__name">株式会社仙波工業<small>SENBAKK</small></span>
+    </a>
+    <p class="hmeta">栃木県宇都宮市平出町3769-1<br><b>T. 028-660-0888</b><!--BLOCK:営業時間-->（平日 9:00—18:00）<!--/BLOCK:営業時間--></p>
+    <div class="drawer-bd" data-drawer-backdrop hidden></div>
+    <nav class="main" id="nav" data-drawer aria-hidden="true">
+      <ul>
+        <li><a href="#message">理念</a></li>
+        <li><a href="#business">事業領域</a></li>
+        <li><a href="#slope">土木・建築</a></li>
+        <li><a href="#recruit">採用情報</a></li>
+        <li><a href="#company">会社概要</a></li>
+        <li><a href="#faq">よくあるご質問</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
+      </ul>
+    </nav>
+    <a class="btn hbtn" href="#contact">お問い合わせ</a>
+    <button class="hamb" id="hamb" type="button" data-drawer-toggle aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== FV ===================== -->
+<section class="fv grid-bg" aria-label="事業領域">
+  <div class="fv__view">
+    <div class="fv__track" id="fvTrack">
+
+      <article class="fv__slide" data-i="0">
+        <div class="fv__num"><b>01</b><em>CIVIL</em></div>
+        <div class="fv__tags"><span>#土木・建築</span><span>#電気設備</span><span>#機械設備</span></div>
+        <div class="fv__body">
+          <img class="fv__img" src="image/work-slope.jpg" alt="金網で保護された法面と、その下を通る道路" width="1800" height="1200" loading="eager" decoding="async">
+          <div class="fv__cap">
+            <p>暮らしの基盤を、つくる。</p>
+            <p>土木・建築事業部。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="fv__slide" data-i="1">
+        <div class="fv__num"><b>02</b><em>MECHANICAL</em></div>
+        <div class="fv__tags"><span>#土木・建築</span><span>#電気設備</span><span>#機械設備</span></div>
+        <div class="fv__body">
+          <img class="fv__img" src="image/work-civil.jpg" alt="造成地で砕石をならす油圧ショベルを真上から見たところ" width="1800" height="1800" loading="lazy" decoding="async">
+          <div class="fv__cap">
+            <p>水と空気と熱を、安定して。</p>
+            <p>機械設備事業部。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="fv__slide" data-i="2">
+        <div class="fv__num"><b>03</b><em>ELECTRIC</em></div>
+        <div class="fv__tags"><span>#土木・建築</span><span>#電気設備</span><span>#機械設備</span></div>
+        <div class="fv__body">
+          <img class="fv__img" src="image/work-tunnel.jpg" alt="照明の連なるトンネルの内部" width="1800" height="1234" loading="lazy" decoding="async">
+          <div class="fv__cap">
+            <p>電気と情報を、届ける。</p>
+            <p>電気設備事業部。</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="fv__slide" data-i="3">
+        <div class="fv__num"><b>04</b><em>MACHINERY</em></div>
+        <div class="fv__tags"><span>#土木・建築</span><span>#電気設備</span><span>#機械設備</span></div>
+        <div class="fv__body">
+          <img class="fv__img" src="image/work-bridge.jpg" alt="河川に架かる橋梁" width="1800" height="1200" loading="lazy" decoding="async">
+          <div class="fv__cap">
+            <p>人と機械が、噛み合うように。</p>
+            <p>機械装置事業部。</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="fv__tabs" role="tablist" id="fvTabs">
+    <button type="button" role="tab" aria-selected="true"  data-i="0"><span class="dia dia--accent"></span>土木・建築</button>
+    <button type="button" role="tab" aria-selected="false" data-i="1"><span class="dia dia--accent"></span>機械設備</button>
+    <button type="button" role="tab" aria-selected="false" data-i="2"><span class="dia dia--accent"></span>電気設備</button>
+    <button type="button" role="tab" aria-selected="false" data-i="3"><span class="dia dia--accent"></span>機械装置</button>
+  </div>
+
+  <div class="lead">
+    <div class="wrap">
+      <div>
+        <p class="lead__tag en">HARMONY OF PEOPLE AND TECHNOLOGY</p>
+        <h1>
+          <span class="line">人と技術の、</span>
+          <span class="line">調和を。</span>
+        </h1>
+        <p class="lead__meta">株式会社仙波工業は、栃木県宇都宮市の総合建設会社です。<br>
+          電気設備、機械設備、土木建築、機械装置の4つの事業を柱として、専門性の高い技術で安全と信頼を提供し、安心な暮らしと地域社会への貢献を培ってまいりました。各事業部が連携し一括管理することで、経済的で機能性が高く、安全でスピーディーな施工を可能にしています。</p>
+      </div>
+      <div class="lead__cta">
+        <a class="lead__tel en" href="tel:0286600888"><small>お問い合わせ・ご相談</small>028-660-0888</a>
+        <a class="btn" href="#recruit">採用情報を見る</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== MESSAGE ===================== -->
+<section class="msg" id="message">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>MESSAGE</h2>
+      <p>代表あいさつ・企業理念</p>
+    </div>
+    <div class="msg__grid">
+      <figure class="msg__figure rv">
+        <img src="image/region.jpg" alt="緑に覆われた山並みと、その麓に広がる田畑と集落" width="1800" height="2694" loading="lazy" decoding="async">
+      </figure>
+      <div class="msg__panel rv">
+        <h3>
+          <span class="line">TECHNICAL SKILL IS HUMAN SKILL</span>
+          <span class="line">技術力とは、人間力。</span>
+        </h3>
+        <p class="en-sub">A MESSAGE FROM THE PRESIDENT</p>
+        <p>技術力とは人間力と考えています。創立以来、御客様（仕事）に誠実に向き合って信頼を築いてまいりましたが、その背景には、堅実に仕事に取り組み、地道に貫いてきたという一貫した姿勢があります。この土台となっているのが当社のメインテーマとなっている「人と技術の調和」です。</p>
+        <p>現代では科学技術に伴う人の力＝「人間力」が求められています。当社では「技術力」＝「人間力」と捉え、人材育成に力を入れております。専門分野においてより高い技術を構築する為に学び続けるのは勿論のこと、社員一人ひとりがお客様のニーズを的確に理解し、各事業部連携の下、技術力を集結し確かな技術サービスを提供することであると考えます。</p>
+        <p>どんなに目まぐるしく時代が移り変わっても、モノを造りだすのは人の手です。そこにまた、人が集まり、育ち、地域社会が構築されていきます。我々技術者集団は社の総合力を遺憾なく発揮する事で御客様の信頼に確実に応え、総合建設会社としての使命を全うし豊かな社会づくりに貢献してまいります。</p>
+        
+      </div>
+    </div>
+
+    <div class="msg__art rv" aria-hidden="true">
+      <!-- 稜線とラティスの線画 -->
+      <svg viewBox="0 0 520 150" fill="none" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 138 L96 44 L150 92 L206 34 L268 104 L318 68 L372 118 L438 74 L516 138"/>
+        <path d="M206 34 L232 60 M206 34 L188 58"/>
+        <path d="M268 104 L516 138" stroke-dasharray="5 6"/>
+        <g opacity=".85">
+          <path d="M330 128 L360 100 M352 132 L382 104 M374 136 L404 108 M396 140 L426 112"/>
+          <path d="M336 104 L366 132 M358 100 L388 128 M380 100 L410 128 M402 104 L432 132"/>
+          <path d="M322 132 L440 132"/>
+        </g>
+        <path d="M60 138 L60 120 L76 120 L76 138" />
+        <path d="M60 120 L68 112 L76 120"/>
+        <circle cx="452" cy="30" r="11"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== BUSINESS ===================== -->
+<section class="biz" id="business">
+  <div class="wrap">
+    <div class="biz__intro">
+      <div class="shead rv" style="margin-bottom:0">
+        <h2>BUSINESS</h2>
+        <p>事業領域</p>
+        <p class="note">電気、空調、給排水、情報通信から土木建築工事に至るまで、社の技術力を結集した「総合力」でお応えします。縦横のマトリックス組織を形成することで組織間の相乗効果を発揮し、専門性の高い技術サービスを提供しています。</p>
+      </div>
+      <div class="rv" aria-hidden="true">
+        <!-- トンネル断面（アーチ＋支保工）の線画 -->
+        <svg viewBox="0 0 300 170" fill="none" stroke="#111111" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 154 C18 66 78 16 150 16 C222 16 282 66 282 154"/>
+          <path d="M40 154 C40 80 88 38 150 38 C212 38 260 80 260 154"/>
+          <path d="M62 154 C62 94 98 60 150 60 C202 60 238 94 238 154"/>
+          <path d="M6 154 L294 154"/>
+          <path d="M150 16 L150 38 M96 26 L106 46 M204 26 L194 46 M56 60 L72 76 M244 60 L228 76 M30 108 L48 114 M270 108 L252 114"/>
+          <path d="M118 154 L118 126 L182 126 L182 154" stroke-dasharray="4 5"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="biz__list">
+      <article class="biz__item rv">
+        <figure><img src="image/work-slope.jpg" alt="金網で保護された法面と、その下を通る道路" width="1800" height="1200" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="biz__num">01</p>
+          <p class="biz__en">CIVIL</p>
+          <h3>土木・建築</h3>
+          <p>自然と調和した生活環境をつくる基盤整備から、景観デザインによる公共工事、民間の造成工事まで幅広く取り組んでいます。道路改良工事、宅地造成工事、河川改修工事、外構工事全般、公園工事、一般建築工事、店舗リニューアル工事を手がけます。電気・空調・情報通信・給排水を一括することで、経済的かつ機能的な空間づくりをご提案します。</p>
+        </div>
+      </article>
+
+      <article class="biz__item rv">
+        <figure><img src="image/work-civil.jpg" alt="重機が稼働する造成・土工事の現場を上空から見たようす" width="1800" height="1800" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="biz__num">02</p>
+          <p class="biz__en">MECHANICAL</p>
+          <h3>機械設備</h3>
+          <p class="req">水、空気、熱を安定した状態でお届けするために、空調システムや給排水における独自のノウハウと多様な技術を提供しています。上下水道工事、給排水・衛生設備、空調換気設備の設計・管理・施工・メンテナンスに加え、既存建物の診断やメンテナンス計画のご提案も行っています。</p>
+        </div>
+      </article>
+
+      <article class="biz__item rv">
+        <figure><img src="image/work-tunnel.jpg" alt="トンネル坑内での工事のようす。換気管の下を工事車両が進む" width="1800" height="1234" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="biz__num">03</p>
+          <p class="biz__en">ELECTRIC</p>
+          <h3>電気設備</h3>
+          <p class="req">オフィス、マンション、商業施設、病院、工場等の電気設備工事において、電気エネルギーを供給するためのインフラ構築だけでなく、情報通信の環境づくりやセキュリティー関連設備まで対応しています。自家用変電設備、電灯・電力設備、自動制御装置、計装設備、映像・音響・テレビ・放送設備、防災・消防設備、情報通信設備の設計・管理・施工・メンテナンスを行います。</p>
+        </div>
+      </article>
+
+      <article class="biz__item rv">
+        <figure><img src="image/work-bridge.jpg" alt="河川に架かるコンクリート橋の橋脚と桁の下面" width="1800" height="1200" loading="lazy" decoding="async"></figure>
+        <div>
+          <p class="biz__num">04</p>
+          <p class="biz__en">MACHINERY</p>
+          <h3>機械装置</h3>
+          <p class="req">人と機械設備が有機的に調和して機能する特殊機械装置の導入では、正確でかつ効率的なシステム化が求められます。水処理装置、立体駐車場、自動倉庫、各種クレーンの設計・施工・メンテナンスを行い、導入後の仕様変更やメンテナンスにも柔軟に対応しています。</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!--BLOCK:工種-->
+<!-- 得意分野の工種を並べるセクション。内容.tsv の 工種_見出し が空なら丸ごと消える -->
+<section class="spec" id="slope">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>WORKS</h2>
+      <p>手がけてきた仕事</p>
+      <p class="note">電気から水まわり、道路や河川、そして機械装置まで。4つの事業部が連携し、一括管理することで、用途の異なる仕事をそれぞれの求められ方に合わせて続けてきました。</p>
+    </div>
+    <ul class="spec__grid rv">
+      <li><span class="dia"></span><div><b>自家用変電設備・電灯電力設備</b></div></li>
+      <li><span class="dia"></span><div><b>防災・消防設備・情報通信設備</b></div></li>
+      <li><span class="dia"></span><div><b>上下水道・給排水・衛生設備</b></div></li>
+      <li><span class="dia"></span><div><b>空調換気設備</b></div></li>
+      <li><span class="dia"></span><div><b>道路改良・宅地造成・河川改修</b></div></li>
+      <li><span class="dia"></span><div><b>水処理装置・立体駐車場・各種クレーン</b></div></li>
+    </ul>
+  </div>
+</section>
+<!--/BLOCK:工種-->
+
+<!-- ===================== RECRUIT ===================== -->
+<section class="rec" id="recruit">
+  <div class="wrap">
+    <div class="rec__top">
+      <div class="rv">
+        <p class="badge">募集中</p>
+        <h2>
+          <span class="line">地元で、</span>
+          <span class="line">長く働く。</span>
+        </h2>
+        <p class="en-sub">RECRUIT</p>
+        <p><span class="line">建築工事現場代理人・電気工事現場代理人・管工事現場代理人・プラントメンテナンス技術者を募集しています。</span><span class="line">勤務地は栃木県宇都宮市。</span><span class="line">新卒および中途採用の募集を随時行っています。建築関連の経験者はもちろん、未経験者にも教育実習期間があります。募集は男女・経験不問です。</span></p>
+      </div>
+      <div class="rec__photo rv">
+        <img src="image/recruit.jpg" alt="ヘルメットと安全ベストを着用して現場に立つ作業員の後ろ姿" width="1800" height="2700" loading="lazy" decoding="async">
+        <p class="rec__cap">※ 写真はイメージです</p>
+      </div>
+    </div>
+
+    <div class="rec__cta rv">
+      <p>まずはお電話ください。<br>ご不明な点だけのお問い合わせでも構いません。</p>
+      <div class="rec__actions">
+        <a class="tel en" href="tel:0286600888"><small>採用に関するお問い合わせ</small>028-660-0888</a>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== COMPANY ===================== -->
+<section class="comp" id="company">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>COMPANY</h2>
+      <p>会社概要</p>
+    </div>
+    <div class="comp__grid">
+      <dl class="deflist rv">
+        <div><dt>社名</dt><dd>株式会社仙波工業</dd></div>
+        <div><dt>所在地</dt><dd><!--BLOCK:郵便番号-->〒321-0901　<!--/BLOCK:郵便番号-->栃木県宇都宮市平出町3769-1</dd></div>
+        <div><dt>代表取締役</dt><dd></dd></div>
+        <div><dt>設立</dt><dd>設立 昭和62年10月（創業 昭和48年5月）</dd></div>
+        <!--BLOCK:資本金--><div><dt>資本金</dt><dd>4,000万円</dd></div><!--/BLOCK:資本金-->
+        
+        <div><dt>事業種目</dt><dd>建設業（土木・建築／機械設備／電気設備）</dd></div>
+        <div><dt>電話</dt><dd>TEL 028-660-0888</dd></div>
+        
+      </dl>
+      <!--BLOCK:認定-->
+      <div class="cert rv">
+        <span class="mark" aria-hidden="true"></span>
+        <h3>代理店・公認工事店</h3>
+        <p>株式会社IHI代理店、東京電力公認工事店、各市町上下水道公認工事店です。取引銀行は足利銀行・栃木銀行・常陽銀行。</p>
+      </div>
+      <!--/BLOCK:認定-->
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>FAQ</h2>
+      <p>よくあるご質問</p>
+    </div>
+    <ul class="faq__list rv">
+      <li>
+        <span class="faq__q" aria-hidden="true">Q.</span>
+        <h3>株式会社仙波工業はどこにありますか？</h3>
+        <span class="faq__a" aria-hidden="true">A.</span>
+        <p>栃木県宇都宮市平出町3769-1にあります。</p>
+      </li>
+      <!--BLOCK:FAQ1_回答-->
+      <li>
+        <span class="faq__q" aria-hidden="true">Q.</span>
+        <h3>事業所はどこにありますか？</h3>
+        <span class="faq__a" aria-hidden="true">A.</span>
+        <p>本社（宇都宮市平出町）のほか、東京支店（板橋区板橋）、高根沢支店（塩谷郡高根沢町）、資材センター（宇都宮市板戸町）があります。</p>
+      </li>
+      <!--/BLOCK:FAQ1_回答-->
+      <!--BLOCK:FAQ2_回答-->
+      <li>
+        <span class="faq__q" aria-hidden="true">Q.</span>
+        <h3>夜間や休日の故障にも対応してもらえますか？</h3>
+        <span class="faq__a" aria-hidden="true">A.</span>
+        <p>メンテナンスは365日24時間体制で対応しています。</p>
+      </li>
+      <!--/BLOCK:FAQ2_回答-->
+      <!--BLOCK:FAQ3_回答-->
+      <li>
+        <span class="faq__q" aria-hidden="true">Q.</span>
+        <h3>未経験でも応募できますか？</h3>
+        <span class="faq__a" aria-hidden="true">A.</span>
+        <p>教育実習期間がありますので、未経験の方でも応募いただけます。募集は男女・経験不問で、外国人の方も歓迎しています。</p>
+      </li>
+      <!--/BLOCK:FAQ3_回答-->
+    </ul>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="ct" id="contact">
+  <div class="wrap">
+    <div class="shead rv">
+      <h2>CONTACT</h2>
+      <p>お問い合わせ</p>
+    </div>
+    <div class="ct__grid">
+      <div class="rv">
+        <a class="ct__big" href="tel:0286600888"><small>お電話でのお問い合わせ</small>028-660-0888</a>
+        <p class="ct__sub">工事のご相談も、採用へのご応募も、こちらの番号で承ります。</p>
+        <div class="ct__actions">
+          
+          <a class="btn btn--ghost" href="#recruit">採用情報を見る</a>
+        </div>
+      </div>
+      <dl class="ct__info rv">
+        <div><dt>本社</dt><dd><!--BLOCK:郵便番号-->〒321-0901　<!--/BLOCK:郵便番号-->栃木県宇都宮市平出町3769-1</dd></div>
+        <div><dt>TEL</dt><dd>028-660-0888</dd></div>
+        <!--BLOCK:FAX--><div><dt>FAX</dt><dd>028-660-0777</dd></div><!--/BLOCK:FAX-->
+        
+      </dl>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== Footer ===================== -->
+<footer class="site">
+  <div class="wrap">
+    <div class="foot__grid">
+      <div class="foot__addr">
+        <b>株式会社仙波工業</b>
+        <!--BLOCK:郵便番号-->〒321-0901　<!--/BLOCK:郵便番号-->栃木県宇都宮市平出町3769-1<br>
+        <a class="tlink" href="tel:0286600888">T. 028-660-0888</a>　F. 028-660-0777<br>
+        
+        <p class="foot__licence">建設業許可番号　栃木県知事許可（特-30）第24343号<br>設立 昭和62年10月（創業 昭和48年5月）</p>
+      </div>
+      <nav class="foot__nav" aria-label="フッターナビゲーション">
+        <ul>
+          <li><a class="tlink" href="#message">理念</a></li>
+          <li><a class="tlink" href="#business">事業領域</a></li>
+          <li><a class="tlink" href="#slope">土木・建築</a></li>
+          <li><a class="tlink" href="#recruit">採用情報</a></li>
+          <li><a class="tlink" href="#company">会社概要</a></li>
+          <li><a class="tlink" href="#faq">よくあるご質問</a></li>
+          <li><a class="tlink" href="#contact">お問い合わせ</a></li>
+        </ul>
+        <p class="mock">本ページはリニューアル提案用のデザインモックアップです。掲載写真はすべてイメージ（フリー素材）であり、実際のお写真に差し替わります。</p>
+      </nav>
+      <a class="pagetop" href="#top" aria-label="ページ上部へ戻る">
+        <span class="arw" aria-hidden="true"></span>
+        <span class="vtxt">Pagetop</span>
+      </a>
+    </div>
+    <div class="foot__bottom">
+      <span class="en">Copyright(C), SENBAKK ALL rights reserved</span>
+      <span>HARMONY OF PEOPLE AND TECHNOLOGY</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* ---------- ハンバーガー ---------- */
+  var hamb = document.querySelector("[data-drawer-toggle]"),
+      nav  = document.querySelector("[data-drawer]"),
+      bd   = document.querySelector("[data-drawer-backdrop]");
+  function setNav(open){
+    nav.classList.toggle("open", open);
+    nav.setAttribute("aria-hidden", open ? "false" : "true");
+    hamb.setAttribute("aria-expanded", open ? "true" : "false");
+    bd.hidden = !open;
+    document.body.classList.toggle("menu-open", open);
+  }
+  function closeNav(){ setNav(false); }
+  hamb.addEventListener("click", function(){ setNav(!nav.classList.contains("open")); });
+  bd.addEventListener("click", closeNav);
+  document.addEventListener("keydown", function(e){ if(e.key === "Escape") closeNav(); });
+  nav.addEventListener("click", function(e){ if(e.target.tagName === "A") closeNav(); });
+  // 画面幅が戻ったらドロワー状態を必ず解除する（PCで body が固定されたままになる）
+  window.addEventListener("resize", function(){
+    if(window.innerWidth > 900 && nav.classList.contains("open")) closeNav();
+  });
+
+  /* ---------- FVカルーセル ---------- */
+  var track = document.getElementById("fvTrack"),
+      tabs  = document.getElementById("fvTabs"),
+      slides = Array.prototype.slice.call(track.children),
+      btns   = Array.prototype.slice.call(tabs.querySelectorAll("button")),
+      cur = 0, timer = null;
+
+  function layout(){
+    var vw = track.parentNode.clientWidth,
+        sw = slides[0].offsetWidth,
+        x  = vw / 2 - (cur * sw + sw / 2);
+    if (window.innerWidth <= 900) x = -cur * sw;
+    track.style.transform = "translateX(" + x + "px)";
+    slides.forEach(function(s, i){ s.classList.toggle("is-on", i === cur); });
+    btns.forEach(function(b, i){ b.setAttribute("aria-selected", i === cur ? "true" : "false"); });
+  }
+  function go(i){ cur = (i + slides.length) % slides.length; layout(); }
+  function start(){ if(reduce) return; stop(); timer = setInterval(function(){ go(cur + 1); }, 6000); }
+  function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+
+  btns.forEach(function(b){
+    b.addEventListener("click", function(){ go(parseInt(b.getAttribute("data-i"), 10)); start(); });
+  });
+  window.addEventListener("resize", layout);
+  layout();
+  start();
+
+  /* ---------- スクロールリビール ---------- */
+  var rv = Array.prototype.slice.call(document.querySelectorAll(".rv"));
+  function revealAll(){ rv.forEach(function(el){ el.classList.add("is-in"); }); }
+  if (reduce || !("IntersectionObserver" in window)) {
+    revealAll();
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(!en.isIntersecting) return;
+        var el = en.target;
+        var sibs = Array.prototype.slice.call(el.parentNode.children).filter(function(n){
+          return n.classList && n.classList.contains("rv");
+        });
+        el.style.transitionDelay = (Math.min(sibs.indexOf(el), 5) * 80) + "ms";
+        el.classList.add("is-in");
+        io.unobserve(el);
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -8% 0px" });
+    rv.forEach(function(el){ io.observe(el); });
+    /* 失敗時の保険: 監視が一度も発火しなければ全部出す（提案先で真っ白にしない） */
+    setTimeout(function(){ if(!document.querySelector(".rv.is-in")) revealAll(); }, 2500);
+    window.addEventListener("load", function(){
+      setTimeout(function(){ if(!document.querySelector(".rv.is-in")) revealAll(); }, 1200);
+    });
+  }
+})();
+</script>
+</body>
+</html>
