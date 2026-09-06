@@ -456,6 +456,52 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
 <!--BLOCK:色_主--><style>:root{--accent:#1D5A94;}</style><!--/BLOCK:色_主-->
 <!--BLOCK:色_地--><style>:root{--band:#F1F4F8;}</style><!--/BLOCK:色_地-->
 
+<style id="tadagumi-recruit-motion">
+.rv,.js .rv,.js .rv.is-in{opacity:1;transform:none;transition:none}
+.comp__grid>*{min-width:0}.deflist dd{min-width:0;overflow-wrap:anywhere}
+@media(min-width:901px) and (max-width:1200px){header .hbtn{display:none}}
+.fv__motion-window{overflow:hidden;clip-path:var(--chamfer)}
+.fv__motion-window .fv__img{clip-path:none;scale:none}
+.fv,.msg,.biz,.rec,.ct{position:relative;isolation:isolate}
+.tada-motion-art{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:-1}
+.tada-streak{position:absolute;left:-2%;top:24px;width:44%;max-width:640px;height:150px;
+  background:linear-gradient(176deg,transparent 0 12%,var(--accent,#bb985e) 12% 29%,transparent 29% 34%,var(--ink,#896b3f) 34% 52%,transparent 52% 59%,var(--accent,#c4aa80) 59% 82%,transparent 82%);
+  opacity:.17;clip-path:polygon(0 0,93% 0,88% 12%,100% 17%,83% 28%,94% 32%,79% 46%,96% 55%,86% 62%,99% 71%,81% 82%,89% 100%,0 100%)}
+.tada-streak--right{left:auto;right:-2%;top:100px;width:30%;height:105px;rotate:180deg;opacity:.14}
+.fv .tada-streak{top:115px;height:240px;width:43%;opacity:.25}
+.fv .tada-streak--right{top:380px;width:33%;height:160px;opacity:.22}
+.msg .tada-streak{top:60px}
+.biz .tada-streak{top:10px}
+.rec .tada-streak--right{top:30px}
+@media(prefers-reduced-motion:no-preference){
+  .fv__slide.is-on .fv__motion-window{animation:tada-photo-enter .7s cubic-bezier(.22,1,.36,1) .12s backwards}
+  .fv__slide.is-on .fv__cap p{animation:tada-copy-enter .8s cubic-bezier(.22,1,.36,1) .28s backwards}
+  .fv__slide.is-on .fv__cap p:nth-child(2){animation-delay:.40s}
+}
+@keyframes tada-photo-enter{from{opacity:0;translate:60px 0}to{opacity:1;translate:0 0}}
+@keyframes tada-copy-enter{from{opacity:0;translate:-48px 0}to{opacity:1;translate:0 0}}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  .btn{transition:background .25s ease,color .25s ease,translate .25s ease}
+  .btn:hover{translate:4px 0}
+}
+@media(max-width:767px){
+  .tada-streak{width:50%;height:100px;opacity:.13}
+  .tada-streak--right{width:34%;height:75px;top:130px}
+  .fv .tada-streak{top:55px;height:130px;opacity:.18}
+  .fv .tada-streak--right{top:370px;height:100px;opacity:.15}
+  @keyframes tada-photo-enter{from{opacity:0;translate:28px 0}to{opacity:1;translate:0 0}}
+  @keyframes tada-copy-enter{from{opacity:0;translate:-24px 0}to{opacity:1;translate:0 0}}
+}
+@media(max-width:600px){
+  .ct__grid{grid-template-columns:minmax(0,1fr)}.ct__grid>*{min-width:0}
+  .ct__actions .btn{white-space:normal;text-align:center;max-width:100%}
+  .ct__info div{grid-template-columns:88px minmax(0,1fr)}
+  .ct__info dd{overflow-wrap:anywhere;min-width:0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
 </head>
 <body>
 
@@ -490,14 +536,15 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
 
 <!-- ===================== FV ===================== -->
 <section class="fv grid-bg" aria-label="事業領域">
-  <div class="fv__view">
+<div class="tada-motion-art" aria-hidden="true"><i class="tada-streak"></i><i class="tada-streak tada-streak--right"></i></div>
+<div class="fv__view">
     <div class="fv__track" id="fvTrack">
 
       <article class="fv__slide" data-i="0">
         <div class="fv__num"><b>01</b><em>CIVIL</em></div>
         <div class="fv__tags"><span>#土木・建築</span><span>#電気設備</span><span>#機械設備</span></div>
         <div class="fv__body">
-          <img class="fv__img" src="image/work-slope.jpg" alt="金網で保護された法面と、その下を通る道路" width="1800" height="1200" loading="eager" decoding="async">
+          <div class="fv__motion-window"><img class="fv__img" src="image/work-slope.jpg" alt="金網で保護された法面と、その下を通る道路" width="1800" height="1200" loading="eager" decoding="async"></div>
           <div class="fv__cap">
             <p>暮らしの基盤を、つくる。</p>
             <p>土木・建築事業部。</p>
@@ -509,7 +556,7 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
         <div class="fv__num"><b>02</b><em>MECHANICAL</em></div>
         <div class="fv__tags"><span>#土木・建築</span><span>#電気設備</span><span>#機械設備</span></div>
         <div class="fv__body">
-          <img class="fv__img" src="image/work-civil.jpg" alt="造成地で砕石をならす油圧ショベルを真上から見たところ" width="1800" height="1800" loading="lazy" decoding="async">
+          <div class="fv__motion-window"><img class="fv__img" src="image/work-civil.jpg" alt="造成地で砕石をならす油圧ショベルを真上から見たところ" width="1800" height="1800" loading="lazy" decoding="async"></div>
           <div class="fv__cap">
             <p>水と空気と熱を、安定して。</p>
             <p>機械設備事業部。</p>
@@ -521,7 +568,7 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
         <div class="fv__num"><b>03</b><em>ELECTRIC</em></div>
         <div class="fv__tags"><span>#土木・建築</span><span>#電気設備</span><span>#機械設備</span></div>
         <div class="fv__body">
-          <img class="fv__img" src="image/work-tunnel.jpg" alt="照明の連なるトンネルの内部" width="1800" height="1234" loading="lazy" decoding="async">
+          <div class="fv__motion-window"><img class="fv__img" src="image/work-tunnel.jpg" alt="照明の連なるトンネルの内部" width="1800" height="1234" loading="lazy" decoding="async"></div>
           <div class="fv__cap">
             <p>電気と情報を、届ける。</p>
             <p>電気設備事業部。</p>
@@ -533,7 +580,7 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
         <div class="fv__num"><b>04</b><em>MACHINERY</em></div>
         <div class="fv__tags"><span>#土木・建築</span><span>#電気設備</span><span>#機械設備</span></div>
         <div class="fv__body">
-          <img class="fv__img" src="image/work-bridge.jpg" alt="河川に架かる橋梁" width="1800" height="1200" loading="lazy" decoding="async">
+          <div class="fv__motion-window"><img class="fv__img" src="image/work-bridge.jpg" alt="河川に架かる橋梁" width="1800" height="1200" loading="lazy" decoding="async"></div>
           <div class="fv__cap">
             <p>人と機械が、噛み合うように。</p>
             <p>機械装置事業部。</p>
@@ -572,7 +619,8 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
 
 <!-- ===================== MESSAGE ===================== -->
 <section class="msg" id="message">
-  <div class="wrap">
+<div class="tada-motion-art" aria-hidden="true"><i class="tada-streak"></i><i class="tada-streak tada-streak--right"></i></div>
+<div class="wrap">
     <div class="shead rv">
       <h2>MESSAGE</h2>
       <p>代表あいさつ・企業理念</p>
@@ -615,7 +663,8 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
 
 <!-- ===================== BUSINESS ===================== -->
 <section class="biz" id="business">
-  <div class="wrap">
+<div class="tada-motion-art" aria-hidden="true"><i class="tada-streak"></i><i class="tada-streak tada-streak--right"></i></div>
+<div class="wrap">
     <div class="biz__intro">
       <div class="shead rv" style="margin-bottom:0">
         <h2>BUSINESS</h2>
@@ -702,7 +751,8 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
 
 <!-- ===================== RECRUIT ===================== -->
 <section class="rec" id="recruit">
-  <div class="wrap">
+<div class="tada-motion-art" aria-hidden="true"><i class="tada-streak"></i><i class="tada-streak tada-streak--right"></i></div>
+<div class="wrap">
     <div class="rec__top">
       <div class="rv">
         <p class="badge">募集中</p>
@@ -803,7 +853,8 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
 
 <!-- ===================== CONTACT ===================== -->
 <section class="ct" id="contact">
-  <div class="wrap">
+<div class="tada-motion-art" aria-hidden="true"><i class="tada-streak"></i><i class="tada-streak tada-streak--right"></i></div>
+<div class="wrap">
     <div class="shead rv">
       <h2>CONTACT</h2>
       <p>お問い合わせ</p>
@@ -907,12 +958,17 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
     btns.forEach(function(b, i){ b.setAttribute("aria-selected", i === cur ? "true" : "false"); });
   }
   function go(i){ cur = (i + slides.length) % slides.length; layout(); }
-  function start(){ if(reduce) return; stop(); timer = setInterval(function(){ go(cur + 1); }, 6000); }
+  function start(){ if(reduce || tabs.contains(document.activeElement)) return; stop(); timer = setInterval(function(){ go(cur + 1); }, 6000); }
   function stop(){ if(timer){ clearInterval(timer); timer = null; } }
 
   btns.forEach(function(b){
     b.addEventListener("click", function(){ go(parseInt(b.getAttribute("data-i"), 10)); start(); });
   });
+
+  // motion-pause-controls
+  window.matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',function(e){reduce=e.matches;if(reduce)stop();else start();});
+  tabs.addEventListener('focusin',stop);
+  tabs.addEventListener('focusout',function(){setTimeout(function(){if(!tabs.contains(document.activeElement))start();},0)});
   window.addEventListener("resize", layout);
   layout();
   start();
@@ -942,6 +998,65 @@ footer.site{border-top:1px solid var(--ink);padding:70px 0 40px;position:relativ
       setTimeout(function(){ if(!document.querySelector(".rv.is-in")) revealAll(); }, 1200);
     });
   }
+})();
+</script>
+<script id="tadagumi-recruit-motion-runtime">
+(() => {
+  const root=document.documentElement;
+  if(root.dataset.tadaMotion==='beforward-v2')return;
+  root.dataset.tadaMotion='beforward-v2';root.dataset.siteMotion='beforward';
+  const media=matchMedia('(prefers-reduced-motion: reduce)');
+  const active=new Set(),seen=new WeakSet();
+  let io;
+  function animate(el,x,delay,duration=800){
+    if(media.matches||!el.animate||seen.has(el))return;
+    seen.add(el);el.dataset.tadaEntered='true';
+    const opacity=getComputedStyle(el).opacity;
+    const a=el.animate([{opacity:0,translate:x+'px 0'},{opacity,translate:'0 0'}],
+      {duration,delay,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards'});
+    active.add(a);a.onfinish=a.oncancel=()=>active.delete(a);
+  }
+  function enter(el){
+    const small=matchMedia('(max-width:767px)').matches;
+    const distance=small?24:50;
+    if(el.classList.contains('tada-motion-art')){
+      animate(el.querySelector('.tada-streak'),-distance,0,1000);
+      animate(el.querySelector('.tada-streak--right'),distance,200,1000);
+    }else{
+      const right=el.classList.contains('msg__figure')||el.classList.contains('rec__photo');
+      animate(el,right?distance:-distance,el.matches('h2')?120:200);
+    }
+  }
+  const nodes=[...document.querySelectorAll('.tada-motion-art, main h2, .lead h1 .line, .msg__figure, .msg__panel, .biz__item, .rec__photo')];
+  if(!media.matches&&'IntersectionObserver' in window){
+    io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){enter(e.target);io.unobserve(e.target)}}),
+      {threshold:0,rootMargin:'0px 0px -12% 0px'});
+    nodes.forEach(el=>{
+      // Observe the visible top of tall sections through their first decoration.
+      if(el.classList.contains('tada-motion-art')){
+        const anchor=el.parentElement;
+        const r=anchor.getBoundingClientRect();
+        if(r.top<innerHeight*.88&&r.bottom>0){enter(el);return;}
+      }
+      io.observe(el);
+    });
+  }
+  media.addEventListener('change',e=>{if(e.matches){active.forEach(a=>a.cancel());if(io)io.disconnect()}});
+  document.addEventListener('focusin',()=>active.forEach(a=>a.finish()));
+  addEventListener('pagehide',()=>active.forEach(a=>a.cancel()));
+})();
+</script>
+<script id="site-motion-extra-runtime">
+(() => {
+ const tabs=document.querySelector('.fv__tabs'),slides=[...document.querySelectorAll('.fv__slide')];
+ if(!tabs)return;const buttons=[...tabs.querySelectorAll('button')];
+ function sync(){buttons.forEach((b,i)=>{const on=b.getAttribute('aria-selected')==='true';b.tabIndex=on?0:-1;if(slides[i]){slides[i].id=slides[i].id||'motion-slide-'+i;b.setAttribute('aria-controls',slides[i].id)}})}
+ tabs.addEventListener('keydown',e=>{
+  if(e.defaultPrevented||e.ctrlKey||e.metaKey||e.altKey)return;const i=buttons.indexOf(document.activeElement);if(i<0)return;
+  let n=i;if(e.key==='ArrowRight')n=(i+1)%buttons.length;else if(e.key==='ArrowLeft')n=(i+buttons.length-1)%buttons.length;else if(e.key==='Home')n=0;else if(e.key==='End')n=buttons.length-1;else return;
+  e.preventDefault();buttons[n].click();buttons[n].focus();sync();
+ });
+ new MutationObserver(sync).observe(tabs,{attributes:true,subtree:true,attributeFilter:['aria-selected']});sync();
 })();
 </script>
 </body>
